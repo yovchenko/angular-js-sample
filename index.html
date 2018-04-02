@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AngularJS sample</title>
-    <script src="js/angular.min.js"></script> 
-    <script src="js/angular-route.min.js"></script> 
-    <script src="js/angular-animate.min.js"></script> 
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/angular-animate.min.js"></script>
 </head>
-<body>
-    <div ng-app="myApp" ng-controller="personCtrl">
 
-        First Name: <input type="text" ng-model="firstName"><br>
-        Last Name: <input type="text" ng-model="lastName"><br>
-        <br>
-        Full Name: {{fullName()}}
-        
-        </div>
-
+<body ng-app="myApp" ng-controller="citiesCtrl">
+    <a ng-click="city = 'Kyiv'" href="#/!">Kyiv</a>
+    <a ng-click="city = 'Lviv'" href="#!Lviv">Lviv</a>
+    <a ng-click="city = 'Kharkiv'" href="#!Kharkiv">Kharkiv</a>
+    <div ng-view></div>
+    <p>I love {{city}}</p>
     <script src="js/controller.js"></script>
 </body>
+
 </html>
