@@ -18,7 +18,8 @@
   "homepage": "https://github.com/yovchenko/AngularJS-sample#readme",
   "devDependencies": {
     "angular-animate": "^1.6.9",
-    "angular-route": "^1.6.9"
+    "angular-route": "^1.6.9",
+    "normalize.css": "^8.0.0"
   },
   "dependencies": {
     "eslint": "^4.19.1"

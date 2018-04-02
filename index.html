@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AngularJS sample</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="js/angular.min.js"></script>
     <script src="js/angular-route.min.js"></script>
     <script src="js/angular-animate.min.js"></script>
@@ -13,10 +15,10 @@
 
 <body ng-app="myApp" ng-controller="citiesCtrl">
     <a ng-click="city = 'Kyiv'" href="#/!">Kyiv</a>
-    <a ng-click="city = 'Lviv'" href="#!Lviv">Lviv</a>
     <a ng-click="city = 'Kharkiv'" href="#!Kharkiv">Kharkiv</a>
+    <a ng-click="city = 'Lviv'" href="#!Lviv">Lviv</a>
     <div ng-view></div>
-    <p>I love {{city}}</p>
+    <p>I love {{city}}!</p>
     <script src="js/controller.js"></script>
 </body>
 
