@@ -1,2 +1,2 @@
 ## Live example
-https://yovchenko.github.io/AngularJS-sample/
+https://yovchenko.github.io/angular-js-sample/
